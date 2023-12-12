@@ -1,0 +1,38 @@
+
+.repo span{
+  padding: 1rem;
+  box-shadow: 3px 3px 5px #0000001a;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.topside a{
+  font-size: 18px;
+  font-weight: normal;
+  color: #0587ff;
+  text-decoration: none;
+  &:focus, &:hover{
+    text-decoration: underline;
+  }
+}
+
+.topside p{
+  font-size: 13px;
+  margin: 0.5rem 0 1rem;
+  color: #a5a5a5;
+}
+
+.bottomSide{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8pt;
+
+  @media (min-width: 768px){
+    width: 20%;
+  }
+
+
+}

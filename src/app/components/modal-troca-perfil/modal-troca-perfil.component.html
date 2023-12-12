@@ -1,0 +1,14 @@
+<div class="modal">
+
+  <div class="sair">
+    <button class="sair" (click)="sair()">✕</button>
+  </div>
+
+
+  <div class="procurar">
+    <input type="search" placeholder="Search Here" ng-model="searchText" #filter (keyup.enter)="newPerfil(filter.value)"/>
+    <button class="btn" type="button" ><fa-icon [icon]="faMagnifyingGlass"></fa-icon></button>
+  </div>
+
+
+</div>

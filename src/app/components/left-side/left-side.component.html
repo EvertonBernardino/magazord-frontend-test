@@ -1,0 +1,68 @@
+<div class="content">
+  <div class="inf">
+    <button (click)="trocarPerfil()">
+      <img [src]="avatar_url" [alt]="name">
+    </button>
+
+    <span class="icon">
+      {{icon}}
+    </span>
+
+    <div class="nome">
+      <h1>{{name}}</h1>
+      <h2>{{username}}</h2>
+    </div>
+
+    <div class="bio">
+      <p>{{bio}}</p>
+    </div>
+
+  </div>
+  <div class="btnOcutar">
+    <button type="button"  (click)="ocutar()">
+      <p>Informações Adicionais</p>
+      <fa-icon [icon]="ico"></fa-icon>
+    </button>
+  </div>
+  <div [class]="row">
+
+    <ul  class="column">
+
+      <li>
+        <fa-icon [icon]="['fas', 'building']"  *ngIf="company"></fa-icon>
+        {{company}}
+      </li>
+
+      <li >
+        <fa-icon [icon]="['fas', 'location-dot']" *ngIf="location"></fa-icon>
+        {{location}}
+      </li>
+
+      <li>
+        <fa-icon [icon]="faEnvelope" *ngIf="email"></fa-icon>
+        {{email}}
+      </li>
+
+      <li>
+        <fa-icon [icon]="['fas', 'link']" *ngIf="blog"></fa-icon>
+        {{blog}}
+      </li>
+    </ul>
+
+    <ul class="peopleIcon">
+      <li>
+        <fa-icon [icon]="['fas', 'user-group']"></fa-icon>
+        <b>{{followers}}</b>
+        <span> Followers</span>
+        <span> •&nbsp; </span>
+      </li>
+
+      <li>
+        <b >{{following}}</b>
+        <span> Following</span>
+      </li>
+
+    </ul>
+
+  </div>
+</div>

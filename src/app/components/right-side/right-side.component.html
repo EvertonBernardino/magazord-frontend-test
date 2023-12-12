@@ -1,0 +1,53 @@
+<div class="profile">
+
+  <form class="select">
+
+    <button [class]="btn1" (click)="selectBtn(1)">
+      <fa-icon [icon]="['fas', 'book']"></fa-icon>
+      <h2>Repositoeies</h2>
+      <p>{{repos}}</p>
+    </button>
+
+    <button [class]="btn2" (click)="selectBtn(2)">
+      <fa-icon [icon]="['fas', 'star']"></fa-icon>
+      <h2>Starred</h2>
+      <p>{{stars}}</p>
+    </button>
+  </form>
+
+
+  <div class="filter">
+    <select class="type" [(ngModel)]="type" name="Type" (change)="selectType()">
+      <option selected disabled hidden>Type</option>
+      <option value="sources">Sources</option>
+      <option value="forks">Forks</option>
+      <option value="archived">Archived</option>
+      <option value="mirrors">Mirrors</option>
+    </select>
+
+    <select class="language" [(ngModel)]="language" name="Language" (change)="selectLanguage()">
+      <option selected disabled hidden >Language</option>
+      <option value="all">All</option>
+      <option value="Java">Java</option>
+      <option value="TypeScript">TypeScript</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+    </select>
+
+    <form class="busca" action="">
+      <input type="search" placeholder="Search Here" ng-model="searchText" #filter (input)="filterResults(filter.value)"/>
+
+      <button class="primary" type="button" (click)="filterResults(filter.value)"><fa-icon [icon]="faMagnifyingGlass"></fa-icon></button>
+
+    </form>
+  </div>
+  <app-repo-card  *ngFor="let repoInf of reposInf"
+    [key]="0"
+    [username]="repoInf.owner.login"
+    [reponame]="repoInf.name"
+    [descricao]="repoInf.description"
+    [language]="repoInf.language"
+    [forks]="repoInf.forks"
+    [stars]="repoInf.stargazers_count"
+  ></app-repo-card>
+</div>

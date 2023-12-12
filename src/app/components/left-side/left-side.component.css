@@ -1,0 +1,130 @@
+.content{
+  margin: 1rem;
+}
+.inf{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin: 1rem 0;
+}
+
+
+img{
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+
+  @media (min-width: 768px){
+    margin-bottom: 2rem;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.icon{
+  margin-top: -1.5rem;
+  margin-left: 5rem;
+  padding: 1%;
+  background-color: white;
+  border-radius: 50%;
+  @media (min-width: 768px){
+    padding: 3%;
+    margin-top: -25%;
+    margin-left: 50%;
+  }
+}
+.nome{
+  margin: 1.3rem 0 1rem 1rem;
+
+}
+.nome h1{
+  font-size: 16pt;
+  line-height: 1.25;
+  color: var(--gray-dark);
+  font-weight: 600;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nome h2{
+  font-size: 13pt;
+  color: var(--username);
+  font-weight: 300;
+}
+
+.bio{
+  font-size: 10pt;
+  color: #989898;
+}
+
+.btnOcutar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px){
+    display: none;
+  }
+
+}
+
+.btnOcutar button{
+  text-decoration: none;
+  color:  #0587ff;
+  font-size: 12pt;
+}
+
+.row{
+  display: contents;
+}
+
+
+.row1{
+  display: none;
+  @media (min-width: 768px){
+    display: contents;;
+  }
+}
+
+.column li{
+  color: #0587ff;
+  font-size: 13pt;
+  @media (min-width: 768px){
+    font-size: 10pt;
+  }
+}
+
+.column li + li{
+  margin-top: 10px;
+
+}
+
+.column span{
+  margin-left: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.peopleIcon{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  @media (min-width: 768px){
+    font-size: 8pt;
+  }
+}
+
+.peopleIcon span{
+  font-size: 14px;
+  color: var(--gray);
+  @media (min-width: 768px){
+    font-size: 8pt;
+  }
+}
+
+

@@ -1,0 +1,69 @@
+.header{
+  background-color: var(--header);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo{
+  fill: var(--logo);
+  flex-shrink: 0;
+  width: 10px;
+  margin-right: 2rem;
+}
+
+.nome span{
+  margin-left: 1rem;
+}
+
+
+.nome h1{
+  color: white;
+  margin: auto;
+  font-weight: bolder;
+  position: relative;
+  font-size: 8pt;
+}
+
+.busca{
+  margin-left: 1rem;
+  width: 100%;
+  display: flex;
+}
+.busca input{
+  background-color: var(--search);
+  outline: 0;
+  border-radius: 6px;
+  padding: 7px;
+  color: rgb(0, 0, 0);
+  width: 100%;
+
+
+  &:focus{
+    width: 70%;
+  }
+
+  transition: width .2s ease-out, color .2s ease-out;
+
+  @media (min-width: 768px){
+    &:focus{
+      width: 30%;
+    }
+
+    transition: width .2s ease-out, color .2s ease-out;
+  }
+}
+
+.busca a{
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.busca a:hover{
+  color: #ffffff;
+  &:focus{
+    color: red;
+  }
+}
+

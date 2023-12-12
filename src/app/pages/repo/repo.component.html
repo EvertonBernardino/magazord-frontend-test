@@ -1,0 +1,12 @@
+<div>
+  <app-repo-card  *ngFor="let infRepo of infRepos$ | async"
+    [key]="0"
+    [username]="infRepo.owner.login"
+    [reponame]="infRepo.name"
+    [descricao]="infRepo.description"
+    [language]="infRepo.language"
+    [forks]="infRepo.forks"
+    [stars]="infRepo.stargazers_count"
+  ></app-repo-card>
+</div>
+

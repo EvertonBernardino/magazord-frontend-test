@@ -1,0 +1,22 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  max-width: 1120px;
+  margin: auto;
+
+  @media (min-width: 768px){
+    flex-direction: row;
+  }
+}
+
+app-left-side{
+  @media (min-width: 768px){
+    width: 30%;
+  }
+}
+
+app-right-side{
+  @media (min-width: 768px){
+    width: 70%;
+  }
+}

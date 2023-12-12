@@ -1,0 +1,28 @@
+<div class="repo">
+  <span>
+    <div class="topside">
+      <a href="/repo">{{reponame}}</a>
+      <p>{{descricao}}</p>
+    </div>
+
+    <div class="bottomSide">
+      <div class="language" *ngIf="language" >
+        {{language}}
+      </div>
+
+      <div class="star">
+        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+        {{stars}}
+      </div>
+
+      <div class="forks">
+        <fa-icon [icon]="['fas', 'code-fork']"></fa-icon>
+        {{forks}}
+      </div>
+
+    </div>
+  </span>
+</div>
+
+
+

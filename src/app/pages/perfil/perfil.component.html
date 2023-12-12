@@ -1,0 +1,18 @@
+
+<div class="main">
+  <app-modal-troca-perfil *ngIf="hideAppear"></app-modal-troca-perfil>
+  <app-left-side
+    [avatar_url]='perfil.avatar_url'
+    [name]="perfil.name"
+    [username]="perfil.login"
+    icon = "😎"
+    [bio]="perfil.bio"
+    [email]="perfil.email"
+    [location]="perfil.location"
+    [followers]="perfil.followers"
+    [following]="perfil.following"
+    [company]="perfil.company"
+    [blog]="perfil.blog"
+  ></app-left-side>
+  <app-right-side></app-right-side>
+</div>
