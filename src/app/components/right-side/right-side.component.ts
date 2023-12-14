@@ -33,6 +33,8 @@ export class RightSideComponent implements OnInit{
   type: string = "Type";
   language: string = "Language";
 
+  msg:boolean = false;
+
 
   constructor(private gitApiService: GitApiService){
 
@@ -135,6 +137,13 @@ export class RightSideComponent implements OnInit{
           i--
         }
       }
+
+      console.log(this.reposInf)
+      if (this.reposInf.length == 0){
+        this.msg = true
+      }else{
+        this.msg = false
+      }
     }
 
 
@@ -157,5 +166,13 @@ export class RightSideComponent implements OnInit{
     this.reposInf = this.reposInf.filter(
       repos => repos?.name.toLowerCase().includes(text.toLowerCase())
     );
+
+    if (this.reposInf.filter(repos => repos?.name.toLowerCase().includes(text.toLowerCase())) == null || 0
+  ){
+    this.msg = true
+  }else {
+    this.msg = false
+  }
+
   }
 }

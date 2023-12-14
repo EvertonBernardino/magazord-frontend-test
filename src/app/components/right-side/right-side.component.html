@@ -49,5 +49,7 @@
     [language]="repoInf.language"
     [forks]="repoInf.forks"
     [stars]="repoInf.stargazers_count"
+    [url]="repoInf.html_url"
   ></app-repo-card>
+  <p *ngIf="msg">Nenhum repositório encontrado</p>
 </div>

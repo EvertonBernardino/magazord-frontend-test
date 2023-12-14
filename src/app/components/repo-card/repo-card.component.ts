@@ -27,5 +27,8 @@ export class RepoCardComponent {
   @Input()
   stars?: number;
 
+  @Input()
+  url: string = "";
+
 
 }
