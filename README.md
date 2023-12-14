@@ -4,7 +4,7 @@
  
  </div>
 
-# Teste para vaga de front-end no Magazord.com.br
+# Teste para vaga de front-end no Magazord.com.br (já concluído)
 Este repositório tem como fim testar os candidatos para vaga de front-end developer na empresa [Magazord](https://magazord.com.br).
 > Para esta vaga buscamos alguém apaixonado por HTML, CSS, JavaScript e atento aos detalhes!
 
