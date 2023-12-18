@@ -166,13 +166,5 @@ export class RightSideComponent implements OnInit{
     this.reposInf = this.reposInf.filter(
       repos => repos?.name.toLowerCase().includes(text.toLowerCase())
     );
-
-    if (this.reposInf.filter(repos => repos?.name.toLowerCase().includes(text.toLowerCase())) == null || 0
-  ){
-    this.msg = true
-  }else {
-    this.msg = false
-  }
-
   }
 }
