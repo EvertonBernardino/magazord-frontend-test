@@ -16,7 +16,7 @@ export class PerfilComponent implements OnInit {
   perfil: any;
   hideAppear:any;
 
-  newPerfil:string="gustavoguanabara";
+  newPerfil:string="EvertonBernardino";
 
 
 
